@@ -14,13 +14,6 @@ public class ParseData {
 
     public String[] getData(String string) {
 
-//        String gender = null;
-//        String phoneNumber = null;
-//        String birthday = null;
-//        String surname = null;
-//        String firstName = null;
-//        String patronymic = null;
-
         String[] inStr = string.split(" ");
         String[] outStr = new String[4];
 
