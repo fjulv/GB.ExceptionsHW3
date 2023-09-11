@@ -21,6 +21,6 @@ public class Main {
             foundString = parseData.getData(inputText);
         }
 
-        fileManager.writeFile("C:\\Users\\user\\Desktop\\javaGB\\ExceptionsHW3\\src\\HW3Exceptions\\/" + parseData.surname + ".txt", Arrays.toString(foundString));
+        fileManager.writeFile("src/HW3Exceptions/" + parseData.surname + ".txt", Arrays.toString(foundString) + "\n");
     }
 }

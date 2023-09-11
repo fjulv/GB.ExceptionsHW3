@@ -31,10 +31,12 @@ public class ParseData {
                 gender = inStr[i];
             } else throw new IncorrectDataException();
         }
+
         outStr[0] = surname + " " + firstName + " " + patronymic;
         outStr[1] = birthday;
         outStr[2] = phoneNumber;
         outStr[3] = gender;
+
         return outStr;
     }
 

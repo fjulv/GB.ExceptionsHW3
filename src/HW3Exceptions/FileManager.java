@@ -11,9 +11,14 @@ public class FileManager {
     public void writeFile(String filePath, String text) {
         try {
             Path path = Paths.get(filePath);
-            Files.writeString(path, text, StandardOpenOption.APPEND);
+            if (Files.exists(path)) {
+                Files.writeString(path, text, StandardOpenOption.APPEND);
+            } else {
+                Files.writeString(path, text);
+            }
         } catch (IOException e) {
             System.out.println("Ошибка записи файла " + e.getMessage());
         }
     }
 }
+
