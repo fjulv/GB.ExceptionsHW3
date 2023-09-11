@@ -17,8 +17,10 @@ public class FileManager {
                 Files.writeString(path, text);
             }
         } catch (IOException e) {
+            e.printStackTrace();
             System.out.println("Ошибка записи файла " + e.getMessage());
         }
     }
 }
+
 
